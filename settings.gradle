@@ -1,1 +1,1 @@
-include ':NotificationSample'
+include ':NotificationSample', ':SimpleNotificationDemo'
