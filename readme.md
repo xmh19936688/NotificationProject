@@ -3,6 +3,12 @@
 ##NotificationSample
 网上各种玩法的demo
 
+##SimpleNotificationDemo
+简单的通知实现
+
+##CustomNotificationDemo
+自定义通知栏demo，实现自定义view与动态更新通知内容
+
 ##知识点
 
 ###Notification
