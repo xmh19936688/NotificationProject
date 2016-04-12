@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         view.setTextViewText(R.id.tv_to,"8:8:8");
         builder = new NotificationCompat.Builder(this);
         builder.setContent(view)
-                .setSmallIcon(R.drawable.ic_launcher)
+                .setSmallIcon(R.drawable.ic_launcher)//此项为必须
                 .setOngoing(true)
                 .setTicker("count:"+count);
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
