@@ -44,4 +44,10 @@ public class MainActivity extends AppCompatActivity {
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notificationManager.notify(notifyId, builder.build());
     }
+
+    @OnClick(R.id.btn_cancle)
+    void onCancleClick(){
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.cancel(notifyId);
+    }
 }
