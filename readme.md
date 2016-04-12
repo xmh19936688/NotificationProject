@@ -62,6 +62,10 @@
 ###PendingIntent
 - 对intent的包装
 - pendingintent可以保存创建intent时的context，即使当时的context不存在了，也能从pendingintent里的context执行intent。
+- `getActivity()`封装打开一个activity的intent，就像`Context.startActivity()`
+- `getActivitys()`封装打开一组activity的intent
+- `getBroadcast()`封装一个发广播的intent，就像`Context.sendBroadcast()`
+- `getService()`封装一个开启服务的intent，就像`Context.startService()`
 
 ###RemoteViews
 - 非UI线程
