@@ -19,7 +19,7 @@
 - `FLAG_INSISTENT`通知铃声会重复响直到通知被取消或通知窗口被打开
 - `FLAG_NO_CLEAR`当用户点击清除所有时该通知不被清除
 - `FLAG_ONGOING_EVENT`该通知被正在运行的事件所引用（比如正在通话）
-- `FLAG_ONLY_ALERT_ONCE`该通知每次发送时都震动或播放通知铃声，即使之前发送的该通知未取消
+- `FLAG_ONLY_ALERT_ONCE`该通知仅首次发送时震动或播放通知铃声，之前发送的该通知未取消的情况下
 - `FLAG_SHOW_LIGHTS`发送该通知时打开呼吸灯
 
 ####default
