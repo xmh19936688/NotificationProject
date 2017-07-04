@@ -1,19 +1,23 @@
-#通知栏各种玩法
+# 通知栏各种玩法
 
-##NotificationSample
+## NotificationSample
+
 网上各种玩法的demo
 
-##SimpleNotificationDemo
+## SimpleNotificationDemo
+
 简单的通知实现
 
-##CustomNotificationDemo
+## CustomNotificationDemo
+
 自定义通知栏demo，实现自定义view与动态更新通知内容
 
-##知识点
+## 知识点
 
-###Notification
+### Notification
 
-####flag
+#### flag
+
 - `FLAG_AUTO_CANCEL`用户点击时消失
 - `FLAG_FOREGROUND_SERVICE`表示正在运行一个服务
 - `FLAG_INSISTENT`通知铃声会重复响直到通知被取消或通知窗口被打开
@@ -22,16 +26,18 @@
 - `FLAG_ONLY_ALERT_ONCE`该通知仅首次发送时震动或播放通知铃声，之前发送的该通知未取消的情况下
 - `FLAG_SHOW_LIGHTS`发送该通知时打开呼吸灯
 
-####default
+#### default
+
 - `DEFAULT_SOUND`使用默认通知声音
 - `DEFAULT_VIBRATE`使用默认震动效果
 - `DEFAULT_LIGHTS`使用默认通知呼吸灯
 - `DEFAULT_ALL`全部使用默认
 
 
-###NotificationManager
+### NotificationManager
 
-###NotificationCompat.Builder
+### NotificationCompat.Builder
+
 - `setAutoCancel(boolean autoCancel)`是否用户点击后消失
 - `setContent(RemoteViews views)`自定义通知的view
 - `setContentInfo(CharSequence info)`显示在右边的文本（时间下面）
@@ -59,7 +65,7 @@
 - `setWhen (long when)`设置通知发送时间
 - `addAction (int icon, CharSequence title, PendingIntent intent)`在底部扩展一块位置显示这个按钮,最多三个
 
-###PendingIntent
+### PendingIntent
 - 对intent的包装
 - pendingintent可以保存创建intent时的context，即使当时的context不存在了，也能从pendingintent里的context执行intent。
 - `getActivity()`封装打开一个activity的intent，就像`Context.startActivity()`
@@ -67,7 +73,8 @@
 - `getBroadcast()`封装一个发广播的intent，就像`Context.sendBroadcast()`
 - `getService()`封装一个开启服务的intent，就像`Context.startService()`
 
-###RemoteViews
+### RemoteViews
+
 - 非UI线程
 - 从layout文件进行inflate：`new RemoteViews(packageName,R.layout.filename)`
 - 提供修改子view的简单方法：`remoteViews.setTextViewText(R.id.view_name, "string");`
